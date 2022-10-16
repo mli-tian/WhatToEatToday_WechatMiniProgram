@@ -1,0 +1,46 @@
+<!--pages/inner/inner.wxml-->
+<import src="../../wxss/dist/capsule/index.wxml" />
+<import src="../../wxss/dist/panel/index.wxml" />
+
+<view class="container">
+  <text>\n</text>
+  <view class="Btext">
+    今天就吃{{dish}}！
+  </view>
+  <text>\n</text>
+  <view class="divLine"></view>
+  <view class="jx_card">
+    <image style="width:750rpx; height:750rpx;" mode="{{item.mode}}" src="cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/background.jpg"> 
+      <image class="jxlogo" src="{{imageurl}}"  mode="aspectFit"/> 
+    </image> 
+  </view> 
+  <view class="divLine"></view>
+  <text>\n</text>
+</view>
+<view class="container-row">
+  <view class=".zan-panel-title">就餐地点</view>
+  <template wx:if="{{localtion === 1}}" is="capsule" data="{{ leftText: '', rightText: '北一', color: '#A020F0' }}" />
+  <template wx:elif="{{localtion === 2}}" is="capsule" data="{{ leftText: '', rightText: '北二', color: '#ff6103' }}" />
+  <template wx:else="{{localtion === 3}}" is="capsule" data="{{ leftText: '', rightText: '南餐', color: '#32CD32' }}" />
+</view>
+<view class="container-row">
+  <view class=".zan-panel-title">就餐时间</view>
+  <template wx:if="{{breakfast}}" is="capsule" data="{{  rightText: '早餐', type: 'danger' }}" />
+  <template wx:if="{{lunch}}" is="capsule" data="{{ leftText: '', rightText: '午餐', color: '#FFD700' }}" />
+  <template wx:if="{{dinner}}" is="capsule" data="{{ leftText: '', rightText: '晚餐', color: '#1E90FF' }}" />
+</view>
+<view class="container-row">
+  <view class=".zan-panel-title">消费类型</view>
+  <template wx:if="{{level === 1}}" is="capsule" data="{{ leftText: '', rightText: '随便凑合', color: '#FFC0BF' }}" />
+  <template wx:elif="{{level === 2}}" is="capsule" data="{{ leftText: '', rightText: '大吃一顿', color: '#B03080' }}" />
+</view>
+<view class="container-row">
+  <view class=".zan-panel-title">菜品简介</view>
+  <viex class=".zan-panel::after">{{introduce}}</viex>
+</view>
+
+
+
+  
+
+

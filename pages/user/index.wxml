@@ -1,0 +1,54 @@
+<!--pages/user/index.wxml-->
+<import src="../../wxss/dist/toptips/index.wxml" />
+<import src="../../wxss/dist/loadmore/index.wxml" />
+
+<view class="the-weather">
+  <view class="wea-thead">
+    <view class="wea-container">
+      <view class="wea-city">
+        <text class="c-name">{{cityName}}</text>
+        <view class="c-temp">
+          <view class="temp-now">{{weatherInfo.temp}}°</view>
+          <view class="temp-state">{{weatherInfo.text}}</view>
+        </view>
+      </view>
+      <view class="wea-life" >
+        <swiper class="life-swiper" vertical="true" autoplay="true" circular="true" interval="5000" wx:if="{{lifeList.length>0}}">
+          <block wx:for='{{lifeList}}' wx:for-item='v' wx:key='k'>
+            <swiper-item class='li-item'>
+              <label class="ti">{{v.name}}：</label>
+              <label class="td">{{v.text}}</label>
+            </swiper-item>
+          </block>
+        </swiper>
+     </view>
+    </view>
+  </view>
+</view>
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="footer-nav">
+    <button class="zan-btn zan-btn--medium" bindtap='toCustomMenu'>自定义菜单</button>
+    <button class="zan-btn zan-btn--medium" bindtap='toPie'>数据统计</button>
+    <button class="zan-btn zan-btn--medium" bindtap='toMap'>查看附近美食</button>   
+  </view>
+  <view class="footer-nav footer-plus">
+    <hr></hr>
+    <view 
+      class='footer-view' 
+      url='pages/about/about'
+      bindtap='toAbout'>
+      关于软件
+    </view>
+    <view>Copyright © 2021-2022 WhatToEat</view>
+  </view>
+</view>

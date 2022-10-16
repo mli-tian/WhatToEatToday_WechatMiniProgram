@@ -1,0 +1,67 @@
+/* pages/inner/inner.wxss */
+.dish-box{
+  padding: 20rpx;
+  width: 90%;
+  margin: 10rpx auto;
+}
+.rest-list {
+  padding-top: 0px;
+  align-self: auto;
+  text-align: left;
+  align-items:flex-start;
+}
+.rest-item {
+  font-size: 24rpx;
+  width: 90%;
+  margin: 10rpx auto;
+  padding: 20rpx;
+  background-color: #FFFFFE;
+  -moz-box-shadow:1px 1px 1px #919191; 
+  -webkit-box-shadow:1px 1px 1px #919191; 
+  box-shadow:1px 1px 1px #919191;
+}
+.rest-title{
+  font-size: 26rpx;
+}
+.rest-address{
+  font-size: 18rpx;
+}
+.rest-point{
+  width: 100rpx;
+  font-size: 10rpx;
+} 
+.jx_card{ 
+  width: 100%; 
+  height: 750rpx; 
+  background-color:#e6e6e6; 
+  position: relative 
+} 
+.jxlogo{ 
+  position:absolute;left:0rpx;right:0rpx;top:0rpx;bottom:0rpx;margin:auto;
+} 
+.Btext{
+  font-style: oblique;
+  font-weight: bold;
+  font-size:64;
+  color:darkcyan;
+  text-align: center;
+}
+/*分割线样式*/
+.divLine{
+  background: #E0E3DA;
+  width: 100%;
+  height: 5rpx;
+ }
+ .container-row{
+  display: flex;
+  flex-direction: row;
+ }
+ .Btext2{
+  font-family:SimSun;
+  font-weight: bold;
+  font-size:medium;
+  text-align: center;
+  color:darkmagenta;
+  width: 240rpx;
+  background-color: cornsilk;
+ }

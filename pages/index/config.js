@@ -1,0 +1,227 @@
+// pages/index/config.js
+module.exports = {
+
+  dishes: [
+    "大盘鸡",
+    "倔酱面",
+    "麻辣烫",
+    "烤肉饭",
+    "重庆小面",
+    "大碗面",
+    "老碗面",
+    "热干面",
+    "盖浇饭",
+    "飘香面馆",
+    "粥",
+    "烤冷面",
+    "水煮鱼",
+    "炒面",
+    "烩菜",
+    "蒸饺",
+    "饺子",
+    "铁板饭"
+  ],
+  dishesObjects:[
+    {
+      "num": 1,
+      "name": "大盘鸡",
+      "level": 2,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/1dapanji.png',
+      "introduce":"南餐小炒大盘鸡，三、四个人只需要点小份！"
+    }, {
+      "num": 2,
+      "name": "倔酱面",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":1,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/2juejiangmian.png',
+      "introduce":"倔酱面，倔犟面"
+    }, {
+      "num": 3,
+      "name": "麻辣烫",
+      "level": 2,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":1,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/3malatang.png',
+      "introduce":"今小主，今天煮了吗？【等的时间可能会有亿点点长】"
+    }, {
+      "num": 4,
+      "name": "烤肉饭",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":2,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/4kaoroufan.png',
+      "introduce":"今天想吃肉"
+    }, {
+      "num": 5,
+      "name": "重庆小面",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/5chongqingxiaomian.png',
+      "introduce":"酸辣开胃，再来一碗！"
+    }, {
+      "num": 6,
+      "name": "大碗面",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":1,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/6dawanmian.png',
+      "introduce":"这碗大，千万别虚荣心作祟~"
+    }, {
+      "num": 7,
+      "name": "老碗面",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/7laowanmian.png',
+      "introduce":"搅一搅，拌一拌"
+    }, {
+      "num": 8,
+      "name": "热干面",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":1,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/8reganmian.png',
+      "introduce":"武汉热干面"
+    }, {
+      "num": 9,
+      "name": "盖浇饭",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/9gaijiaofan.png',
+      "introduce":"南餐进门第一家"
+    }, {
+      "num": 10,
+      "name": "飘香面馆",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/10piaoxiangmianguan.png',
+      "introduce":"飘香面馆香不香？"
+    }, {
+      "num": 11,
+      "name": "粥",
+      "level": 1,
+      "breakfast": true,
+      "lunch": false,
+      "dinner": true,
+      "localtion":1,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/11zhou.png',
+      "introduce":"早晚来一碗粥能养胃"
+    }, {
+      "num": 12,
+      "name": "烤冷面",
+      "level": 1,
+      "breakfast": true,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/12kaolengmian.png',
+      "introduce":"听我的！可能会饿！"
+    }, {
+      "num": 13,
+      "name": "水煮鱼",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":2,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/13shuizhuyu.png',
+      "introduce":"份大鱼多，点赞！"
+    },
+    {
+      "num": 14,
+      "name": "炒面",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/14chaomian.png',
+      "introduce":"量超大份"
+    },
+     {
+      "num": 15,
+      "name": "烩菜",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/15huicai.png',
+      "introduce":"换汤不换药，还是原来的味道"
+    }, {
+      "num": 16,
+      "name": "蒸饺",
+      "level": 1,
+      "breakfast": true,
+      "lunch": false,
+      "dinner": false,
+      "localtion":3,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/16zhengjiao.png',
+      "introduce":"早上餐厅人好多，就吃这个吧"
+    }, {
+      "num": 17,
+      "name": "饺子",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":2,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/17jiaozi.png',
+      "introduce":"是妈妈包的饺子的味道吗"
+    }, {
+      "num": 18,
+      "name": "铁板饭",
+      "level": 1,
+      "breakfast": false,
+      "lunch": true,
+      "dinner": true,
+      "localtion":2,
+      "on": true,
+      "imageurl":'cloud://cloud1-8gckm86fe78ac58d.636c-cloud1-8gckm86fe78ac58d-1306712629/images/18tiebanfan.png',
+      "introduce":"呲啦呲啦【这个板好沉】"
+    }, 
+  ]
+};
